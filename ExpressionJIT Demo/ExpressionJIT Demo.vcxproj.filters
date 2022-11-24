@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Graph3D">
+      <UniqueIdentifier>{b3cccc85-a3c9-4f71-9678-5aedb98c6c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Benchmark">
+      <UniqueIdentifier>{c2ed6ad0-ab91-4850-93cc-029cd2d295cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\expression_compiler.h" />
+    <ClInclude Include="source\demo_selection_scene.h" />
+    <ClInclude Include="source\Graph3D\graph3d_scene.h">
+      <Filter>Graph3D</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Graph3D\graph3d_renderer.h">
+      <Filter>Graph3D</Filter>
+    </ClInclude>
+    <ClInclude Include="source\params.h" />
+    <ClInclude Include="source\vertex.h" />
+    <ClInclude Include="source\camera_controller.h" />
+    <ClInclude Include="source\camera.h" />
+    <ClInclude Include="source\Benchmark\benchmark_scene.h">
+      <Filter>Benchmark</Filter>
+    </ClInclude>
+    <ClInclude Include="source\interpreter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\app.cpp" />
+    <ClCompile Include="source\demo_selection_scene.cpp" />
+    <ClCompile Include="source\Graph3D\graph3d_scene.cpp">
+      <Filter>Graph3D</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Graph3D\graph3d_renderer.cpp">
+      <Filter>Graph3D</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Benchmark\benchmark_scene.cpp">
+      <Filter>Benchmark</Filter>
+    </ClCompile>
+    <ClCompile Include="source\interpreter.cpp" />
+  </ItemGroup>
+</Project>

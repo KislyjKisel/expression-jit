@@ -1,0 +1,5 @@
+.vs/
+bin/
+*.idb
+*.pdb
+log.txt

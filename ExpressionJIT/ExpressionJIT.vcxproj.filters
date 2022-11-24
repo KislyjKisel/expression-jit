@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ir">
+      <UniqueIdentifier>{383c8736-c3b9-40f0-8217-1338eaccad79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="expression">
+      <UniqueIdentifier>{e8e51533-36d5-4661-98e4-ac2af05204ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jit">
+      <UniqueIdentifier>{e121386a-4e5a-4d84-9623-8803ccd8a6b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\include\exprjit\expression_node.h">
+      <Filter>expression</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\binary_encoder.h">
+      <Filter>jit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\function.h">
+      <Filter>jit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\function_allocator.h">
+      <Filter>jit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\x86_64.h">
+      <Filter>jit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\ir.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\ir_generator.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\ir_optimizer.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\jit.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\parser.h">
+      <Filter>expression</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\opcode.h">
+      <Filter>jit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\exprjit\data_type.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\function_allocator.cpp">
+      <Filter>jit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ir_generator.cpp">
+      <Filter>ir</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parser.cpp">
+      <Filter>expression</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ir_optimizer.cpp">
+      <Filter>ir</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
